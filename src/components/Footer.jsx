@@ -136,7 +136,7 @@ const Footer = () => {
               © {currentYear} CADASTUR. Todos los derechos reservados.
             </p>
             <p className="text-gray-500 text-sm flex items-center gap-1">
-              Hecho con <span className="text-red-500">❤️</span> en Brasil 🇧🇷
+              Naviowebs.com
             </p>
           </div>
         </div>
