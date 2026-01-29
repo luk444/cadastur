@@ -4,7 +4,7 @@ const Hero = () => {
   const whatsappLink = `https://wa.me/${contactInfo.whatsapp}?text=${encodeURIComponent(contactInfo.whatsappMessage)}`;
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-x-hidden overflow-y-auto w-full">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
@@ -17,8 +17,8 @@ const Hero = () => {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-tropical-400/20 rounded-full blur-3xl animate-pulse-slow"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-ocean-400/20 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-20 -left-20 sm:left-10 w-72 h-72 bg-tropical-400/20 rounded-full blur-3xl animate-pulse-slow"></div>
+      <div className="absolute bottom-20 -right-20 sm:right-10 w-72 sm:w-96 h-72 sm:h-96 bg-ocean-400/20 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

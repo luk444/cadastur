@@ -10,9 +10,9 @@ import WhatsAppButton from './components/WhatsAppButton'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden w-full">
       <Navbar />
-      <main>
+      <main className="overflow-x-hidden w-full">
         <Hero />
         <About />
         <Services />

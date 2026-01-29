@@ -4,7 +4,7 @@ const Contact = () => {
   const whatsappLink = `https://wa.me/${contactInfo.whatsapp}?text=${encodeURIComponent(contactInfo.whatsappMessage)}`;
 
   return (
-    <section id="contacto" className="py-20 lg:py-28 bg-gradient-to-b from-white to-tropical-50 relative overflow-hidden">
+    <section id="contacto" className="py-20 lg:py-28 bg-gradient-to-b from-white to-tropical-50 relative overflow-x-hidden w-full">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{

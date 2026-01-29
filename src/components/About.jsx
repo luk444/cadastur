@@ -15,7 +15,7 @@ const About = () => {
             </div>
             
             {/* Floating Card */}
-            <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 max-w-[200px]">
+            <div className="absolute -bottom-6 -right-2 sm:-right-6 bg-white rounded-2xl shadow-xl p-4 sm:p-6 max-w-[180px] sm:max-w-[200px]">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-12 h-12 bg-gradient-to-br from-tropical-400 to-ocean-500 rounded-full flex items-center justify-center">
                   <span className="text-white text-xl">☀️</span>
@@ -35,8 +35,8 @@ const About = () => {
             </div>
 
             {/* Decorative Elements */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-tropical-200 rounded-full opacity-60 -z-10"></div>
-            <div className="absolute top-1/2 -right-8 w-16 h-16 bg-ocean-200 rounded-full opacity-60 -z-10"></div>
+            <div className="absolute -top-4 -left-4 w-16 sm:w-24 h-16 sm:h-24 bg-tropical-200 rounded-full opacity-60 -z-10"></div>
+            <div className="absolute top-1/2 -right-4 sm:-right-8 w-12 sm:w-16 h-12 sm:h-16 bg-ocean-200 rounded-full opacity-60 -z-10"></div>
           </div>
 
           {/* Content Side */}
