@@ -4,7 +4,7 @@ const Hero = () => {
   const whatsappLink = `https://wa.me/${contactInfo.whatsapp}?text=${encodeURIComponent(contactInfo.whatsappMessage)}`;
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-x-hidden overflow-y-auto w-full">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-x-hidden overflow-y-visible w-full">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
@@ -21,12 +21,12 @@ const Hero = () => {
       <div className="absolute bottom-20 -right-20 sm:right-10 w-72 sm:w-96 h-72 sm:h-96 bg-ocean-400/20 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 sm:pt-24">
         <div className="space-y-8">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
-            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-            <span className="text-white/90 text-sm font-medium">Búzios • Río de Janeiro</span>
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 whitespace-nowrap">
+            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse flex-shrink-0"></span>
+            <span className="text-white/90 text-xs sm:text-sm font-medium">Búzios • Río de Janeiro</span>
           </div>
 
           {/* Main Title */}
@@ -69,7 +69,7 @@ const Hero = () => {
           </div>
 
           {/* Features */}
-          <div className="flex flex-wrap justify-center gap-6 pt-8">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 pt-8 pb-16 sm:pb-8">
             {[
               { icon: '🚗', text: 'Transfers' },
               { icon: '🏙️', text: 'City Tours' },
@@ -78,17 +78,17 @@ const Hero = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/10 hover:bg-white/20 transition-colors cursor-default"
+                className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/10 hover:bg-white/20 transition-colors cursor-default"
               >
-                <span className="text-xl">{item.icon}</span>
-                <span className="text-white/90 text-sm font-medium">{item.text}</span>
+                <span className="text-lg sm:text-xl">{item.icon}</span>
+                <span className="text-white/90 text-xs sm:text-sm font-medium">{item.text}</span>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        {/* Scroll Indicator - Solo visible en desktop y posicionado correctamente */}
+        <div className="hidden md:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
           <a href="#about" className="text-white/60 hover:text-white transition-colors">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />

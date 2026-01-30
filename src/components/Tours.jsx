@@ -3,12 +3,12 @@ import TourCard from './TourCard';
 
 const Tours = () => {
   return (
-    <section id="tours" className="py-20 lg:py-28 bg-gradient-to-b from-tropical-50/50 to-white relative overflow-x-hidden w-full">
+    <section id="tours" className="py-20 lg:py-28 bg-gradient-to-b from-tropical-50/50 to-white relative overflow-x-hidden overflow-y-visible w-full">
       {/* Background Decorations */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-tropical-100 rounded-full opacity-30 blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-ocean-100 rounded-full opacity-30 blur-3xl translate-x-1/2 translate-y-1/2"></div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-tropical-100 rounded-full opacity-30 blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-ocean-100 rounded-full opacity-30 blur-3xl translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-tropical-100 rounded-full mb-6">
