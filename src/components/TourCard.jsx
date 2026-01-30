@@ -6,7 +6,7 @@ const TourCard = ({ tour }) => {
   )}`;
 
   return (
-    <article className="card group">
+    <article className="card group overflow-hidden">
       {/* Image Container */}
       <div className="relative h-56 overflow-hidden">
         <img

@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden w-full">
       <Navbar />
-      <main className="overflow-x-hidden w-full">
+      <main className="overflow-x-hidden overflow-y-visible w-full">
         <Hero />
         <About />
         <Services />
